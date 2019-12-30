@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayi,i;
+    int toplam=0;
+    printf("sayi girin:");
+    scanf("%d",&sayi);
+
+    for(i=0;i<=sayi;i++){
+
+        toplam=toplam+i;
+
+    }
+
+    printf("Girilen sayiya kadar olan toplam:%d",toplam);
+
+    return 0;
+}
