@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+
+   int i;
+   int sayi;
+   for(sayi=0;sayi<999;sayi++){
+
+    int b=sayi%10;
+    int o=sayi/10;
+
+
+    int y1=sayi/100;
+    int o1=(sayi%100)/10;
+    int b1=(sayi%100)%10;
+
+
+    int toplam=(pow(b,3))+(pow(o,3));
+        toplam=(pow(y1,3))+(pow(o1,3))+(pow(b1,3));
+       if(toplam==sayi)
+
+        printf("Bu sayinin kupu kendine esit sayi: %d Rakamlarinin kupleri toplami: %d\n",sayi,toplam);
+
+   }
+    return 0;
+}
