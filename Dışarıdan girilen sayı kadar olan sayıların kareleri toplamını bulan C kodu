@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int sayi,i;
+   int toplam=0;
+   printf("sayi giriniz:");
+   scanf("%d",&sayi);
+
+   for(i=0;i<=sayi;i++){
+
+
+    toplam=toplam+(i*i);
+
+
+   }
+
+   printf("Girilen sayiya kadar olan sayilarin kareleri toplami:%d",toplam);
+
+
+
+    return 0;
+}
