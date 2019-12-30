@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+   int sayi1,sayi2;
+   int i,sonuc=0;
+   printf("1.sayiyi gir:");
+   scanf("%d",&sayi1);
+
+   printf("2.sayiyi gir:");
+   scanf("%d",&sayi2);
+
+   for(i=1;i<=sayi1;i++)
+
+     sonuc=sonuc+sayi2;
+
+  printf("sonuc:%d",sonuc);
+
+    return 0;
+}
