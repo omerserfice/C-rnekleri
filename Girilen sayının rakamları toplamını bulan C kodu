@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+
+    int toplam=0,sayi;
+
+    printf("Sayi giriniz:");
+    scanf("%d",&sayi);
+
+    if(sayi>0 && sayi<=99){
+
+        int b=sayi%10;
+        int o=sayi/10;
+        toplam=b+o;
+
+        printf("Sayinin rakamlari toplami:%d",toplam);
+    }else if(sayi>99 && sayi<=999){
+
+        int b=(sayi%100)%10;
+        int o=(sayi%100)/10;
+        int y=sayi/100;
+        toplam=b+o+y;
+
+        printf("Sayinin rakamlari toplami:%d",toplam);
+
+
+    }else if(sayi>999 && sayi<=9999){
+
+
+        int s1=1234;
+        int b=(sayi%1000)%100%10;
+        int o=(sayi%1000)%100/10;
+        int y=(sayi%1000)/100;
+        int bin=sayi/1000;
+        toplam=b+o+y+bin;
+
+printf("Sayinin rakamlari toplami:%d",toplam);
+
+    }else{
+
+     printf("Sayinin rakamlari toplami:%d",sayi);
+
+
+
+    }
+
+    return 0;
+}
