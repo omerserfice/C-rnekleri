@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int r;
+   double pi=3.14;
+
+   printf("Dairenin capini giriniz:");
+   scanf("%d",&r);
+
+   double cevre,alan;
+
+   cevre=2*pi*r;
+   alan=pi*r*r;
+
+   printf("Dairenin cevresi= %.2f\n",cevre);
+   printf("Dairenin alani= %.2f",alan);
+
+
+    return 0;
+}
