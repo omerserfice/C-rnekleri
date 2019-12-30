@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int sayi,i;
+   int toplam=0;
+   printf("sayi giriniz:");
+   scanf("%d",&sayi);
+
+ for(i=0;i<=sayi;i++){
+
+   if(i%2==1)
+
+    toplam=toplam+i;
+
+
+  }
+
+
+printf("Toplam= %d\n",toplam);
+
+    return 0;
+}
+// 1 3 5 7 11 13
