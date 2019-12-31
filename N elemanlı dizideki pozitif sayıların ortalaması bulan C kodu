@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+
+   int i,n,toplam=0;
+   double ort=0;
+   printf("Dizinin eleman sayisini gir:");
+   scanf("%d",&n);
+   int dizi[n];
+
+   for(i=0;i<n;i++){
+
+    printf("%d. elemani gir:",i+1);
+    scanf("%d",&dizi[i]);
+
+    if(dizi[i]>0)
+
+        toplam+=dizi[i];
+        ort=toplam/n;
+
+   }
+
+    printf("Toplam:%d\n",toplam);
+    printf("Pozitif sayilarin ortalamasi:%.2f",ort);
+    return 0;
+}
