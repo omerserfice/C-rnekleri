@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+
+   int i,n,toplam=0;
+   printf("Dizinin eleman sayisini gir:");
+   scanf("%d",&n);
+   int dizi[n];
+
+   for(i=0;i<n;i++){
+
+    printf("%d. elemani gir:",i+1);
+    scanf("%d",&dizi[i]);
+
+    toplam+=dizi[i];
+
+   }
+
+    printf("Toplam:%d",toplam);
+
+    return 0;
+}
