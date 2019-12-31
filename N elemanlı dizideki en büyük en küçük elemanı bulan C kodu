@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+
+   int i,n,toplam=0,enb=0,enk;
+   double ort=0;
+   printf("Dizinin eleman sayisini gir:");
+   scanf("%d",&n);
+   int dizi[n];
+
+   for(i=0;i<n;i++){
+
+    printf("%d. elemani gir:",i+1);
+    scanf("%d",&dizi[i]);
+
+    if(enb<dizi[i])
+
+        enb=dizi[i];
+     if(enk>dizi[i])
+
+        enk=dizi[i];
+
+   }
+
+   printf("En buyuk sayi:%d\n",enb);
+   printf("En kucuk sayi:%d",enk);
+
+    return 0;
+}
