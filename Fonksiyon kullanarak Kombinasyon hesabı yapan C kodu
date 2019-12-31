@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int kombinasyon(int a,int b){
+    int a1=1,b1=1,n1=1,i,n,sonuc;
+    n=a-b;
+    for(i=a;i>=1;i--)
+        a1=a1*i;
+    for(i=b;i>=1;i--)
+        b1*=i;
+    for(i=n;i>=1;i--)
+        n1*=i;
+
+    sonuc=a1/(b1*n1);
+
+    return sonuc;
+}
+
+int main()
+{
+    int sayi1,sayi2;
+    printf("1.sayiyi gir:");
+    scanf("%d",&sayi1);
+
+    printf("2.sayiyi gir:");
+    scanf("%d",&sayi2);
+
+    printf("%d nin %d li kombinasyonu:%d",sayi1,sayi2,kombinasyon(sayi1,sayi2));
+
+
+    return 0;
+}
